@@ -12,3 +12,7 @@ test('must return default message if value is 0', () => {
 test('must return default message if value is a negative number', () => {
     expect(Positive(-1)).toBe('constraint_positive')
 })
+
+test('must return true if value is a positive number', () => {
+    expect(Positive(1)).toBeTruthy()
+})
